@@ -5,6 +5,6 @@
 - [Flask 源码阅读（三）路由](https://github.com/x1ah/Blog/issues/4)
 - [Flask 源码阅读（四）应用启动流程](https://github.com/x1ah/Blog/issues/5)
 - [Flask 源码阅读（五）附：上下文](https://github.com/x1ah/Blog/issues/7)
-- [Java 集合](https://github.com/x1ah/Blog/issues/7)
+- [Java 集合](https://github.com/x1ah/Blog/issues/8)
 ## About
 - [About Me](https://github.com/x1ah/Blog/issues/6)
