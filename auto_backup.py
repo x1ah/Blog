@@ -2,15 +2,16 @@
 # coding:utf-8
 
 import os
-import json
 
 import requests
+
 
 def all_issues():
     api = "https://api.github.com/repos/x1ah/Blog/issues"
     res = requests.get(api).json()
     for issue in res:
         yield issue
+
 
 def backup(issue):
     title = issue.get('title')
@@ -20,13 +21,7 @@ def backup(issue):
     url = issue.get('html_url')
     create_at = issue.get('created_at')
     body = issue.get('body')
-    head_text = """
----
-title: {title}
-category: {label}
-date: {time}
-url: {url}
----
+    head_text = """---  \r\ntitle: {title}  \r\ncategory: {label}  \r\ndate: {time}   \r\nurl: {url}  \r\n---\r\n
     """.format(title=title, label=label, time=create_at, url=url)
     backup_path = os.path.join('backup', label)
     if not os.path.isdir(backup_path):
@@ -36,10 +31,12 @@ url: {url}
     with open(path, 'w') as mkd:
         mkd.write(head_text + body)
 
+
 def run():
     issues = all_issues()
     for issue in issues:
         backup(issue)
+
 
 if __name__ == "__main__":
     run()
