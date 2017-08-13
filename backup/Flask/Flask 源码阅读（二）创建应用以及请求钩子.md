@@ -1,10 +1,10 @@
+---  
+title: Flask 源码阅读（二）创建应用以及请求钩子  
+category: Flask  
+date: 2017-03-01T13:09:57Z   
+url: https://github.com/x1ah/Blog/issues/3  
+---
 
----
-title: Flask 源码阅读（二）创建应用以及请求钩子
-category: Flask
-date: 2017-03-01T13:09:57Z
-url: https://github.com/x1ah/Blog/issues/3
----
     >看优秀项目的源码有个技巧，那就是从最初的版本开始看，这样能更快的理解作者的思想，所以，下面的例子以及源码均为 flask 0.1 版本的源码，flask 0.1 版本代码总共也才600+行，非常短小精悍。
 
 ### 从例子开始

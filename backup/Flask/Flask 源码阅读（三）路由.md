@@ -1,10 +1,10 @@
+---  
+title: Flask 源码阅读（三）路由  
+category: Flask  
+date: 2017-03-01T13:15:13Z   
+url: https://github.com/x1ah/Blog/issues/4  
+---
 
----
-title: Flask 源码阅读（三）路由
-category: Flask
-date: 2017-03-01T13:15:13Z
-url: https://github.com/x1ah/Blog/issues/4
----
     在我们请求某个 URL 时，应用程序是如何对不同的 URL 作出不同的响应的？在 Flask 里面又是怎么实现的？在前面看见 Flask 类里面初始化了一个实例变量 `url_map`，这是个 `werkzeug.routing.Map` 对象，实际上可以把它看作是个 **路由映射规则** ，类似于字典这样的数据结构，里面存的都是 Web 应用的各种路由规则，供我们使用。
 
  在 Flask 里面`route`装饰器估计是最常用最熟悉的了，下面就来看看这个神奇的东西背后都有哪些幺娥子，先找到了`Flask.route`方法实现，如下

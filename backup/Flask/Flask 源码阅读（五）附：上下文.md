@@ -1,10 +1,10 @@
+---  
+title: Flask 源码阅读（五）附：上下文  
+category: Flask  
+date: 2017-03-11T15:25:10Z   
+url: https://github.com/x1ah/Blog/issues/7  
+---
 
----
-title: Flask 源码阅读（五）附：上下文
-category: Flask
-date: 2017-03-11T15:25:10Z
-url: https://github.com/x1ah/Blog/issues/7
----
     先完全从 Flask 源码来观察上下文机制是怎样实现的
 
 ------------------------------------------------------

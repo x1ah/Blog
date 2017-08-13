@@ -1,10 +1,10 @@
+---  
+title: Flask 源码阅读（四）应用启动流程  
+category: Flask  
+date: 2017-03-04T02:46:00Z   
+url: https://github.com/x1ah/Blog/issues/5  
+---
 
----
-title: Flask 源码阅读（四）应用启动流程
-category: Flask
-date: 2017-03-04T02:46:00Z
-url: https://github.com/x1ah/Blog/issues/5
----
     >结束了这些小细节，现在开始来把这些全部串起来，看看一个 Web 应用是怎么启动的，中间又触发了什么，先后顺序又是怎么样的，一个请求过来如何响应，以及 Flask 的几个特色点
 
 在 WSGI 协议里面就已经提到过，应用程序必须是一个可调用对象，并且带两个参数，对应到 Python 里面，可以有三种实现方式：

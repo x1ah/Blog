@@ -1,10 +1,10 @@
+---  
+title: Flask 源码阅读（一）准备知识  
+category: Flask  
+date: 2017-02-25T16:03:49Z   
+url: https://github.com/x1ah/Blog/issues/2  
+---
 
----
-title: Flask 源码阅读（一）准备知识
-category: Flask
-date: 2017-02-25T16:03:49Z
-url: https://github.com/x1ah/Blog/issues/2
----
     ### 首先为什么要看 flask 源码？
 - 加强 flask 基础，熟悉 flask 的各种用法以及设计哲学
 - 还能学习大牛们怎么写代码，一些技巧

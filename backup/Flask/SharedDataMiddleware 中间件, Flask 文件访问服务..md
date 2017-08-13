@@ -1,10 +1,10 @@
+---  
+title: SharedDataMiddleware 中间件, Flask 文件访问服务.  
+category: Flask  
+date: 2017-01-25T13:17:34Z   
+url: https://github.com/x1ah/Blog/issues/1  
+---
 
----
-title: SharedDataMiddleware 中间件, Flask 文件访问服务.
-category: Flask
-date: 2017-01-25T13:17:34Z
-url: https://github.com/x1ah/Blog/issues/1
----
     [SharedDataMiddleware](http://werkzeug.pocoo.org/docs/0.11/middlewares/#werkzeug.wsgi.SharedDataMiddleware) 是 [Werkzeug](http://werkzeug.pocoo.org/docs/0.11/) 内的一个中间件，顾名思义，用来 share data 共享数据的。经常我们能看见一些软件的安装方式是这样的:
 
 ```shell
