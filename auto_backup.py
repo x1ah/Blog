@@ -32,11 +32,32 @@ def backup(issue):
         mkd.write(head_text + body)
 
 
+def add_to_readme(issue):
+    with open('README.md', 'a') as readme:
+        readme.write('- {t}: [{name}]({url})\n'.format(
+            t=issue.get('created_at'),
+            name=issue.get('title'),
+            url=issue.get('html_url')
+        ))
+
+
 def run():
     issues = all_issues()
+    try:
+        os.remove('README.md')
+    except:
+        pass
     for issue in issues:
         backup(issue)
+        add_to_readme(issue)
+    try:
+        os.system('git add .')
+        os.system('git commit -m\'update {m}\''.format(issue[0].get('title')))
+        os.system('git push origin master')
+    except:
+        pass
 
 
 if __name__ == "__main__":
     run()
+
