@@ -1,3 +1,4 @@
+- 2017-12-24T04:14:50Z: [Python 中谨慎使用 copy.deepcopy()](https://github.com/x1ah/Blog/issues/18)
 - 2017-10-28T13:40:16Z: [极速上手写一个 Flask 扩展](https://github.com/x1ah/Blog/issues/17)
 - 2017-10-15T05:35:09Z: [HTTPS](https://github.com/x1ah/Blog/issues/16)
 - 2017-08-20T12:18:42Z: [MySQL 游标分页与传统分页](https://github.com/x1ah/Blog/issues/15)
